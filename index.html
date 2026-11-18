@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منصة مستر يوسف مصطفي | تعليمية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- الهيدر -->
+<header>
+  <div class="logo">🎓 مستر <span>يوسف مصطفي</span></div>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#subjects">المواد</a>
+    <a href="#features">ليه احنا؟</a>
+    <a href="#price">الاشتراك</a>
+  </nav>
+  <button class="login-btn" onclick="openModal()">اشترك الآن</button>
+</header>
+
+<!-- الواجهة -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <span class="badge">🔥 أقوى منصة تعليمية في مصر</span>
+    <h1>افهم.. مش تحفظ<br>مع <span>مستر يوسف مصطفي</span></h1>
+    <p>شرح مبسط، حل امتحانات، ومتابعة لحد ما تقفل المادة. كل المواد في مكان واحد.</p>
+    <div class="hero-btns">
+      <button class="main-btn" onclick="scrollToPrice()">اشترك بـ 1000ج 🔥</button>
+      <button class="sec-btn" onclick="playVideo()">▶️ شاهد شرح مجاني</button>
+    </div>
+    <div class="stats">
+      <div><b id="students">0</b><p>+ طالب</p></div>
+      <div><b id="videos">0</b><p>+ فيديو</p></div>
+      <div><b>98%</b><p>نسبة النجاح</p></div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <div class="card-teacher">
+      <div class="avatar">👨‍🏫</div>
+      <h3>مستر يوسف مصطفي</h3>
+      <p>خبرة +10 سنين في التدريس</p>
+      <div class="stars">⭐⭐⭐⭐⭐ 4.9</div>
+      <button onclick="openModal()">ابدأ رحلتك</button>
+    </div>
+  </div>
+</section>
+
+<!-- المواد -->
+<section id="subjects">
+  <h2>اختار مادتك وابدأ</h2>
+  <div class="grid">
+    <div class="card" onclick="selectSubject('الرياضيات')"><span>🧮</span><h3>الرياضيات</h3><p>شرح + حل 500 سؤال</p></div>
+    <div class="card" onclick="selectSubject('الفيزياء')"><span>⚛️</span><h3>الفيزياء</h3><p>تجارب عملية مبسطة</p></div>
+    <div class="card" onclick="selectSubject('الكيمياء')"><span>🧪</span><h3>الكيمياء</h3><p>معادلات هتفهمها لأول مرة</p></div>
+    <div class="card" onclick="selectSubject('اللغة العربية')"><span>📚</span><h3>اللغة العربية</h3><p>نحو وبلاغة من الصفر</p></div>
+    <div class="card" onclick="selectSubject('اللغة الإنجليزية')"><span>🇬🇧</span><h3>English</h3><p>جرامر وكلمات بسهولة</p></div>
+    <div class="card" onclick="selectSubject('الأحياء')"><span>🧬</span><h3>الأحياء</h3><p>رسومات وشرح بالعربي</p></div>
+  </div>
+  <p id="selected" class="selected">اختار مادة عشان تشوف التفاصيل 👆</p>
+</section>
+
+<!-- المميزات -->
+<section id="features" class="features">
+  <h2>ليه تختار منصة مستر يوسف؟</h2>
+  <div class="grid">
+    <div class="f-card"><h3>📹 فيديوهات بجودة عالية</h3><p>شاهد في أي وقت ومن أي جهاز</p></div>
+    <div class="f-card"><h3>📝 امتحانات أسبوعية</h3><p>اعرف مستواك قبل الامتحان الحقيقي</p></div>
+    <div class="f-card"><h3>💬 جروب واتساب للمتابعة</h3><p>اسأل المستر بنفسه وهيرد عليك</p></div>
+    <div class="f-card"><h3>📄 مذكرات PDF مجانية</h3><p>اطبعها وذاكر منها براحتك</p></div>
+  </div>
+</section>
+
+<!-- السعر -->
+<section id="price" class="price-section">
+  <h2>اشتراك واحد يفتحلك كل حاجة</h2>
+  <div class="price-card">
+    <span class="offer">خصم لفترة محدودة</span>
+    <h3>الباقة الذهبية</h3>
+    <div class="price"><del>1500ج</del> <b>1000ج</b> <small>/ الترم كامل</small></div>
+    <ul>
+      <li>✅ كل المواد وكل الفيديوهات</li>
+      <li>✅ امتحانات + تصحيح فوري</li>
+      <li>✅ متابعة مع مستر يوسف مصطفي</li>
+      <li>✅ مذكرات PDF هدية</li>
+    </ul>
+    <button class="main-btn" onclick="openModal()">اشترك الآن بـ 1000ج</button>
+    <p class="pay">الدفع فودافون كاش - انستا باي - تحويل بنكي</p>
+  </div>
+</section>
+
+<!-- الأسئلة -->
+<section class="faq">
+  <h2>أسئلة بتتكرر كتير</h2>
+  <div class="faq-item"><button onclick="toggleFaq(this)">هل الاشتراك لكل المواد؟ <span>+</span></button><p>أيوه، بـ 1000ج بتاخد كل المواد وكل الفيديوهات للترم كله.</p></div>
+  <div class="faq-item"><button onclick="toggleFaq(this)">ازاي ادفع؟ <span>+</span></button><p>فودافون كاش أو انستا باي، وبعد الدفع ابعت السكرين وهيتم تفعيل حسابك في 10 دقايق.</p></div>
+  <div class="faq-item"><button onclick="toggleFaq(this)">ينفع اشاهد من الموبايل؟ <span>+</span></button><p>أيوه، المنصة بتشتغل على الموبايل والكمبيوتر والتابلت.</p></div>
+</section>
+
+<footer>© 2026 منصة مستر يوسف مصطفي - كل الحقوق محفوظة | تواصل: 01000000000</footer>
+
+<!-- نافذة الاشتراك -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <h2>اشترك الآن 🚀</h2>
+    <p>الباقة الذهبية - <b>1000ج</b></p>
+    <input type="text" id="name" placeholder="اكتب اسمك">
+    <input type="text" id="phone" placeholder="رقم الواتساب">
+    <select id="grade"><option>اختار الصف</option><option>أولي ثانوي</option><option>تانية ثانوي</option><option>تالتة ثانوي</option></select>
+    <button onclick="subscribe()">تأكيد الاشتراك</button>
+    <p id="msg"></p>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
+  <script src="./main.js"></script>
+</body>
+</html>
